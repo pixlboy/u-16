@@ -1,0 +1,103 @@
+md-toolbar.md-warn > md-tabs.md-default-theme, md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]){
+	color: rgb(255,64,129);
+}
+md-toolbar.md-warn > md-tabs.md-default-theme, md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active, md-toolbar.md-warn > md-tabs.md-default-theme, md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused{
+	color: rgb(255,64,129);
+}
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; 
+}
+.tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; 
+}
+.tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+    background: white; 
+}
+.tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; 
+}
+
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }
+  
+  .listdemoListControls {
+  /* Add some right padding so that the text doesn't overlap the buttons */ }
+  .listdemoListControls md-divider {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .listdemoListControls md-list-item > p,
+  .listdemoListControls md-list-item > .md-list-item-inner > p,
+  .listdemoListControls md-list-item .md-list-item-inner > p,
+  .listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */ }
+  .listdemoListControls .secondary-button-padding p {
+    padding-right: 100px; }
+  
+.glyphicon{
+	    font-size: 26px;
+	    line-height: 46px;
+  }
+.md-toolbar-tools .app-logo{
+	font-size: 26px;  
+  }
+.faq-page .question{
+	color: rgb(255,64,129);
+	font-weight:700;
+	margin: 10px 0 0 0;
+}
+.faq-page .answer{
+	color: rgba(0,0,0,0.87);
+	font-weight:400;
+    margin: 0 0 0 16px;
+}
+.item-code{
+	margin:0 10px 0 0;
+	color: #000;
+}
+.item-name{
+    color: rgb(255,64,129);
+    font-weight: 700;
+        margin: 0;
+}
+.item-price {
+	font-weight: 700;
+	    margin: 0;
+}
+.categories-page .md-no-sticky{
+	margin: 0;
+	background: rgb(19, 21, 37);
+    color: #fff;
+    font-size: 16px;
+    line-height: 10px;
+}
+.categories-page md-list{
+	padding: 0;
+}
+.emphasis{
+	font-weight:700;
+	font-size:18px;
+	color: rgb(255,64,129);
+}
+.app-toolbar{
+	background: rgb(19, 21, 37);
+}
+md-ink-bar{
+	background: rgb(19, 21, 37) !important;
+}
+.md-subheader .md-subheader-inner{
+	padding: 16px 0 16px 8px;
+}
+md-list-item .md-no-style, md-list-item.md-no-proxy{
+	padding: 0 8px;
+}
+md-list-item, md-list-item .md-list-item-inner{
+	min-height: 30px;
+}

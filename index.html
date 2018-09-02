@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="U16App">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>U16</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+  	<div>
+	  <md-content>
+	  <md-toolbar>
+      <div class="md-toolbar-tools app-toolbar">
+        <h1 class="app-logo"><a href="index.html"><img height="42px" width="45px" src="images/U16 logo.png" alt="U16"/></a></h1>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="More">
+          <a href="tel:+918095540871"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+        </md-button>
+      </div>
+    </md-toolbar>
+	  </md-content>
+	</div>
+    <div ng-cloak="" class="tabsdemoDynamicHeight" ng-controller="AppCtrl">
+	  <md-content>
+	    <md-tabs md-dynamic-height="" md-border-bottom="">
+	      <md-tab label="Categories">
+	      <md-content class="categories-page">
+			    <md-list>
+			      <md-subheader class="md-no-sticky">Facial</md-subheader>
+			    	<md-list-item ng-repeat="item in facial">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Face Treatment</md-subheader>
+			    	<md-list-item ng-repeat="item in faceTreatment">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Face Bleach</md-subheader>
+			    	<md-list-item ng-repeat="item in faceBleach">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Threading</md-subheader>
+			    	<md-list-item ng-repeat="item in threading">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Treatment</md-subheader>
+			    	<md-list-item ng-repeat="item in hairTreatment">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Spa</md-subheader>
+			    	<md-list-item ng-repeat="item in hairSpa">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Cut</md-subheader>
+			    	<md-list-item ng-repeat="item in hairCut">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Treatment</md-subheader>
+			    	<md-list-item ng-repeat="item in hairTreatment">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Styling</md-subheader>
+			    	<md-list-item ng-repeat="item in hairStyling">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Coloring</md-subheader>
+			    	<md-list-item ng-repeat="item in hairColoring">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Body Bleach</md-subheader>
+			    	<md-list-item ng-repeat="item in bodyBleach">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Hair Treatment</md-subheader>
+			    	<md-list-item ng-repeat="item in hairTreatment">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Body Polishing</md-subheader>
+			    	<md-list-item ng-repeat="item in bodyPolishing">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Waxing</md-subheader>
+			    	<md-list-item ng-repeat="item in waxing">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Massage</md-subheader>
+			    	<md-list-item ng-repeat="item in massage">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Manicure</md-subheader>
+			    	<md-list-item ng-repeat="item in manicure">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Pedicure</md-subheader>
+			    	<md-list-item ng-repeat="item in pedicure">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Make Up</md-subheader>
+			    	<md-list-item ng-repeat="item in makeUp">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			      	<md-subheader class="md-no-sticky">Combo</md-subheader>
+			    	<md-list-item ng-repeat="item in combo">
+				        <div class="md-list-item-text" layout="column">
+				          <p class="item-name"><strong class="item-code">{{item.itemCode}}</strong>{{item.itemName}}</p>
+				          <p class="item-price md-secondary">Rs. {{item.itemPrice}}</p>
+				        </div>
+			      	</md-list-item>
+			    </md-list>
+	        </md-content>
+	      </md-tab>
+<!--
+	      <md-tab label="Explore">
+	        <md-content class="md-padding">
+	          <h1 class="md-display-2">Explore</h1>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+	          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+	          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+	        </md-content>
+	      </md-tab>-->
+
+	      <md-tab label="About Us">
+	        <md-content class="md-padding">
+	        	<p>Do <span class="emphasis">U</span> have a party to attend or an important business meeting or <span class="emphasis">U</span> don’t want to leave your kids alone or <span class="emphasis">U</span> need some time for <span class="emphasis">U</span>rself and <span class="emphasis">U</span> want to look pretty at all times? Yes, but not feeling like going outside waiting for <span class="emphasis">U</span>r turn at salon.</p> 
+				<p>Don’t worry, <span class="emphasis">U16</span> is here to cater all your beauty needs and that too at a place where you feel most comfortable. We believe that looks tell a lot about people and we are here to bring the best in <span class="emphasis">U</span>.</p>
+				<p>Currently, <span class="emphasis">U</span> can book our services in three time slot on the same day through <strong>WhatsApp</strong> or <strong>Call</strong>. Just message/call us, after selecting from a variety of beauty services, along with <span class="emphasis">U</span>r details, choose a convenient time slot and relax. Our beauty professional will contact <span class="emphasis">U</span> before coming.</p>
+				<p>Book Now and experience the Best <span class="emphasis">U</span> with <span class="emphasis">U16</span>.</p>
+	        </md-content>
+	      </md-tab>
+	      <md-tab label="How it Works">
+	        <md-content class="md-padding">
+			    <md-list>
+			    	<md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p>1. Pick your service code from our beauty catalogue (For example: Anti Acne Facial – AF1)</p>
+				        </div>
+			      	</md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p>2. WhatsApp/Call us along with necessary details like Your Name, Address, Date/Timing and Service codes.</p>
+				        	<img height="400px" width="300px" src="images/addressdetails.png" />
+				        </div>
+				    </md-list-item>		  
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p>3. Done. Enjoy and Relax now.</p>
+				        </div>
+				    </md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				        	<p>
+				        		<strong>Note: The details of the professional will be sent to you via email/SMS/WhatsApp/Call.</strong>
+				        	</p>
+							<p>
+								If you have any other contact number/Email, please mention.
+								Our professional will be contacting you after confirming and before arrival.
+							</p>
+				        </div>
+				    </md-list-item>
+			    </md-list>
+	        </md-content>
+	      </md-tab>
+	      <md-tab label="FAQ's">
+	          <md-content class="md-padding faq-page">
+			    <md-list>
+			    	<md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">1. Do we need to arrange for any equipment at home like in Salons for availing U16 services?</p>
+				          <p class="answer">No, U16 beauty professionals will carry all equipment required. However, for any specific service if required the professional will contact you before arrival. You just need to sit back and relax. All you need is a room and chair.</p>
+				        </div>
+			      	</md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">2. What is the quality and reliability of the cosmetics/herbal products that U16 Professional use?</p>
+						  <p class="answer">U16 beauty professionals carry a beauty bag with all the products, which are sourced by U16 team from brand stores recommended by U16 experts. We provide products from well-known brands like VLCC, Lotus, o3+, L’Oreal and Figaro.</p>
+				        </div>
+				    </md-list-item>		  
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">3. Are your professionals qualified and verified?</p>
+						  <p class="answer">U16 beauty professionals have 3-9 years of experience of working with some of the best salons. Our experts at U16 also screen them to test skills, to make sure you get the best experience possible. Yes, we do a thorough background check of our service providers to ensure your safety and security.</p>
+				        </div>
+				    </md-list-item>
+				   	<md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">4. Do you have any other additional charges?</p>
+						  <p class="answer">There are no additional charges, apart from what is mentioned in U16 beauty catalogue.</p>
+				        </div>
+				    </md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">5. What are timings to do a booking?</p>
+						  <p class="answer">U16 beauty professionals work in time slots from 9.30 a.m. till 7 p.m.</p>
+				        </div>
+				    </md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">6. Can I book an appointment in advance? Can I book instantly?</p>
+						  <p class="answer">You can book on U16 two hours or more (next day booking also) prior to your preferred appointment time, subject to availability. In future, with app and website we plan to offer instant services to our customers.</p>
+				        </div>
+				    </md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">7. How do I cancel or modify my scheduled booking?</p>
+						  <p class="answer">If you'd like to make a cancellation or modification, please contact our customer care. We request you to cancel or modify your booking at least 2 hours prior to your booking time.</p>
+				        </div>
+				    </md-list-item>
+   				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">8. What happens if either the Professional or I am running late?</p>
+						  <p class="answer">Please contact the professional, the contact details of professionals shall be sent to you via Email/SMS.
+							Alternatively, feel free to contact our customer care. If the professional is running late, she will call you at the number provided by you. Punctuality is of utmost importance to our professionals and all of us at U16, so be rest assured that we would make every effort to be on time.
+							If you'd like to make a cancellation or modification, we request you to cancel or modify the booking at least 3 hours prior to your booking time.</p>
+				        </div>
+				    </md-list-item>
+				    <md-list-item>
+				        <div class="md-list-item-text" layout="column">
+				          <p class="question">9. What forms of payment do you accept?</p>
+						  <p class="answer">At present we only accept cash on delivery, you can pay our professional after receiving the services. We will start accepting cards and online payments in future.</p>
+				        </div>
+				    </md-list-item>
+			    </md-list>
+	        </md-content>
+	      </md-tab>
+	    </md-tabs>
+	  </md-content>
+	</div>
+    <!-- Angular Material Dependencies -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
